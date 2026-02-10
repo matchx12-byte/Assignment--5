@@ -16,10 +16,10 @@ The fetched data is then displayed in a React component.
 - Simple and clean UI
 
 ## API Used
-https://api.escuelajs.co/api/v1/products
+https://jsonplaceholder.typicode.com/photos
 
 ## Deployed Link
-https://marvelous-sherbet-55910b.netlify.app
+https://fanciful-clafoutis-512a70.netlify.app/
 
 ## How to Run Locally
 1. Clone the repository
