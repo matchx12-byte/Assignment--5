@@ -1,10 +1,9 @@
-
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const useFetch = (url) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch(url)
@@ -13,8 +12,8 @@ const useFetch = (url) => {
         setData(result);
         setLoading(false);
       })
-      .catch((err) => {
-        setError(err);
+      .catch(() => {
+        setError(true);
         setLoading(false);
       });
   }, [url]);

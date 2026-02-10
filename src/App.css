@@ -1,16 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #222, #000);
+  color: #fff;
+}
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+.app {
   padding: 20px;
 }
 
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
+.title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.card img {
+.status {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* Card styling */
+.card {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Image box like mentor demo */
+.img-wrapper {
+  background-color: #444;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.img-wrapper img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Text */
+.caption {
+  font-size: 13px;
+  color: #ccc;
 }
